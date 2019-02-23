@@ -14,12 +14,6 @@ PHP 常用功能扩展
 
 使用 composer require pangzi/phpext
 
-#### 使用说明
-
-1. 代码压缩  php think compress  会自动成功 当前项目名_en的目录
-2. 使用Pgsql :    dbtype = \\tpext\\db\\connector\\Pgsql 即可
-
-
 
 #### 工具函数
 
