@@ -6,12 +6,12 @@
  * Time: 17:50
  */
 
-namespace tpext\tools;
+namespace phpext\tools;
 
 
 use HttpException;
+use phpext\traits\Singleton;
 use think\Exception;
-use tpext\traits\Singleton;
 
 
 class Logger

@@ -11,9 +11,9 @@
  * @param string $content 写日志的内容
  * @param bool $append true 追加内容  false 内部不追加
  */
-function tpext_logger(string $content, bool $append = true)
+function phpext_logger($content, $append = true)
 {
-    \tpext\tools\Logger::getInstance()->log($content, $append);
+    \phpext\tools\Logger::getInstance()->log($content, $append);
 }
 
 /**
@@ -23,18 +23,18 @@ function tpext_logger(string $content, bool $append = true)
  * @param string $separate 返回单词或字母间的分隔符
  * @return string 转换后的拼音
  */
-function tpext_pingyin($str, bool $first = true, $separate = '')
+function phpext_pingyin($str, $first = true, $separate = '')
 {
-    return \tpext\tools\Pingyin::getInstance()->str2py($str, $first, $separate);
+    return \phpext\tools\Pingyin::getInstance()->str2py($str, $first, $separate);
 }
 
 
 /**
  * 使用工具函数
- * @return \tpext\traits\Singleton|null
+ * @return \phpext\traits\Singleton|null
  */
-function tpext_tools()
+function phpext_tools()
 {
-    return \tpext\tools\Tools::getInstance();
+    return \phpext\tools\Tools::getInstance();
 }
 

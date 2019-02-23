@@ -6,7 +6,7 @@
  * Time: 17:26
  */
 
-namespace tpext\traits;
+namespace phpext\traits;
 
 /**
  * 单例模式
