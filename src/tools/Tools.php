@@ -233,6 +233,7 @@ class Tools
             curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
             curl_setopt($curl, CURLOPT_SSL_VERIFYPEER, false);
             curl_setopt($curl, CURLOPT_SSL_VERIFYHOST, false);
+            curl_setopt($curl, CURLOPT_IPRESOLVE, CURL_IPRESOLVE_V4);
             list($content, $status) = [curl_exec($curl), curl_getinfo($curl), curl_close($curl)];
             //return (intval($status["http_code"]) === 200) ? $content : false;
             return (empty($content)) ? false : $content;
